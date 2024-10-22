@@ -9,7 +9,7 @@ public class Main {
         flow.methodB();
         flow.methodC();
         flow.methodD();
-        
+
 
     }
 }
