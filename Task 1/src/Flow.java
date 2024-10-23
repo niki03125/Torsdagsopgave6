@@ -3,7 +3,6 @@ public class Flow {
     public void methodA(){
         System.out.println("j a v a");
     }
-
     public void methodB(){
         System.out.println(" e r ");
     }
