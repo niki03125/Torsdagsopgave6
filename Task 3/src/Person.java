@@ -1,4 +1,4 @@
-public abstract class Person {
+public class Person {
 
     private String name;
 
@@ -14,6 +14,8 @@ public abstract class Person {
         this.name=name;
     }
 
-    public abstract boolean addCourse(String course);
+    public boolean addCourse(String course){
+        return true;
+    }
 
 }

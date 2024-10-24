@@ -1,25 +1,24 @@
 import java.util.ArrayList;
 
-public class Student extends Person{
-    ArrayList<String> passedCourses;
+public class Teacher extends Person{
+
+    ArrayList<String> canTeach;
     ArrayList<String> currentCourses;
 
-    public Student(String name,ArrayList<String> passedCourses) {
+    public Teacher(String name, ArrayList<String> canTeach){
         super(name);
-        this.passedCourses = passedCourses;
+        this.canTeach = canTeach;
         this.currentCourses = new ArrayList<>();
-
     }
 
     @Override
     public boolean addCourse(String course) {
-        if (passedCourses.contains(course)) {
-            return false;
-        } else {
+        if (canTeach.contains(course)) {
             currentCourses.add(course);
             return true;
+        } else {
+            return false;
 
         }
     }
-
 }
