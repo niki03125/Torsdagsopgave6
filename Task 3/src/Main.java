@@ -32,14 +32,14 @@ public class Main {
         persons.add(teacher1);
         persons.add(teacher2);
 
-        String course = "java 1.0";
         for(Person p: persons){
-            if(!p.addCourse(course)){
+            p.addCourse("java 1.0");
                 if (p instanceof Student){
-                    System.out.println(p.getName()+ " har allerede bestået dette kursus");
-                }else if(p instanceof Teacher){
+                    if(!p.addCourse("java 1.0")) {
+                        System.out.println(p.getName() + " har allerede bestået dette kursus");
+                    }
+                    }else if(p instanceof Teacher){
                     System.out.println(p.getName()+ " kan ikke undervise i dette fag");
-                }
 
             }
         }
